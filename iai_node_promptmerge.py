@@ -1,10 +1,10 @@
 from typing import Literal
 from pydantic import Field
-from .baseinvocation import BaseInvocation, InvocationContext
-from .prompt import PromptOutput
+from ...invocations.baseinvocation import BaseInvocation, InvocationContext
+from ...invocations.prompt import PromptOutput
 
 
-class PromptPassthroughInvocation(BaseInvocation):
+class PromptMergeInvocation(BaseInvocation):
     """Just passthrough the prompt"""
     #fmt: off
     type: Literal["prompt_passthrough"] = "prompt_passthrough"

@@ -1,8 +1,8 @@
 from typing import Literal
 from pydantic import Field
-from .baseinvocation import BaseInvocation, InvocationContext
+from ...invocations.baseinvocation import BaseInvocation, InvocationContext
 from pathlib import Path
-from .prompt import PromptOutput
+from ...invocations.prompt import PromptOutput
 
 # TODO: Magic Prompts
     # Magic Prompts Length
